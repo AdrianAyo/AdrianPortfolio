@@ -1,102 +1,131 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Anton', sans-serif;
 }
-.about::selection { background: yellow; }
-.container {
+h1 {
+    margin: 0 auto;
+    font-weight: 300;
+    color: #373737;
+}
+/******************************
+*** GRADIENT SECTION BORDER ***
+*******************************/
+.section_border {
+    border-bottom: 10px solid transparent;
+    -moz-border-image: -moz-linear-gradient(90deg, #A239CA 0%, #4717f6 100%);
+    -webkit-border-image: -webkit-linear-gradient(90deg, #3acfd5 0%, #3a4ed5 100%);
+    border-image: linear-gradient(90deg, #F81884 0%, #4717f6 60%);
+    border-image-slice: 1;
+}
+
+
+.header {
     width: 100%;
     height: 100vh;
+    background: #f4f4f4;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    background-color: black;
-    overflow: hidden;
-    z-index: -2;
-}
-.bg {
-    background: url(img/bg.jpg);
-    height: 100vh;
-    width: 100vw;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: fixed;
-    opacity: 0.7;
-    z-index: -1;
 }
 
-.header {
+.logo {
+    width: 50%;
+    height: 50%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: 1fr,1fr;
+    font-family: 'Anton', sans-serif;
     position: absolute;
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin: 0 auto;
+    border: 15px solid transparent;
 }
-.header img {
-    width: 250px;
-    height: 250px;
-    animation: rotateY 10s infinite linear;
+.logo_border {
+  -moz-border-image: -moz-linear-gradient(top, #A239CA 0%, #4717f6 100%);
+  -webkit-border-image: -webkit-linear-gradient(top, #3acfd5 0%, #3a4ed5 100%);
+  border-image: linear-gradient(to bottom, #F81884 0%, #4717f6 100%);
+  border-image-slice: 1;
 }
-.header img:hover {
-    animation: rotateY 10s infinite linear;
+
+@keyframes animatedgradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
-    
-@-webkit-keyframes rotateY {
-  0% { transform: rotateY( 0deg); }
-  100% { transform: rotateY( 360deg); }
+.logo h1 {
+    font-size: 10vw;
+    margin: 0 auto;
+    position: relative;
+    font-weight: 300;
+    top: 3vh;
+    color: #373737;
 }
+.logo h2 {
+    font-size: 5.7vw;
+    margin: 0 auto;
+    position: relative;
+    font-weight: 300;
+    top: -4.5vh;
+    color: #373737;
+}
+.insidetext {
+    font-size: 1.5vh;
+    font-family: 'Anton', sans-serif;
+    font-weight: 100;
+    background: #f4f4f4;
+    color: #373737;
+    position: relative;
+    top: 26vh;
+    padding: 0 10px;
+}
+@media only screen and (max-width: 768px) {
+    .logo {
+        width: 80%;
+        grid-template-rows: auto;
+    }
+    .logo h1 {
+        font-size: 13.8vh;
+        top: 7.7vh;
+    }
+    .logo h2 {
+        font-size: 7.9vh;
+        top: -6vh;
+    }
+}
+
 .about {
     width: 100%;
-    height: 1000px;
-    background-color: lightgray;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    justify-items: center;
-    align-items: center;
+    height: 100vh;
+    background: #f4f4f4;
     text-align: center;
-    font-size: 30px;
 }
-.about_me {
-    grid-column: span 2;
+.section_title {
+    font-size: 7vh;
+    padding-top: 20px;
 }
-.about_me h1:after {
-    content: "";
-    display: block;
-    margin: 0 auto;
-    width: 25%; 
-    padding-top: 20px; 
-    border-bottom: 4px solid rgb(58, 111, 255);
-    border-radius: 10%;
+.icons {
+    font-size: 250px;
+    filter: grayscale(100%);
 }
-.langs {
-    font-size: 70px;
-    display: grid;
-    grid-gap: 10px;
+.icons:hover {
+    filter: grayscale(0%);
 }
-.item {
+.fa-html5 {
+    color: #E34C26;
 }
-.item:after, .lev:after {
-    content: "";
-    display: block;
-    margin: 0 auto;
-    width: 100%; 
-    padding-top: 20px; 
-    border-bottom: 4px solid rgb(58, 111, 255);
+.fa-css3-alt {
+    color: #
 }
-.level {
-    font-size: 60px;
-    display: grid;
-    grid-gap: 10px;
-}
-#s1 {
-    color: rgb(159, 185, 255);
-}
-#s2 {
-    color: rgb(122, 157, 253);
-}
-#s3 {
-    color: rgb(92, 135, 253);
+.fa-js {
+    color: #f7df1e;
 }
