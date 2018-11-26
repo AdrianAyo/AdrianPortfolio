@@ -18,7 +18,7 @@ body {
 .section_title {
     font-family: 'Kaushan Script', cursive;
     font-size: 7vh;
-    padding: 30px;
+    padding: 50px;
     font-weight: 300;
     margin: 0 auto;
     color: #373737;
@@ -28,6 +28,17 @@ body {
     .section_border {
         border-bottom: 5px solid transparent;
     }
+}
+/********************************
+************ NAVBAR *************
+********************************/
+.navbar {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    background: black;
 }
 
 /********************************
@@ -61,7 +72,7 @@ body {
 .logo_border {
   -moz-border-image: -moz-linear-gradient(top, #F81884 0%, #4717f6 100%);
   -webkit-border-image: -webkit-linear-gradient(top, #F81884 0%, #4717f6 100%);
-  border-image: linear-gradient(to bottom, #F81884 0%, #4717f6 100%);
+  border-image: linear-gradient(45deg, #F81884 0%, #4717f6 100%);
   border-image-slice: 1;
 }
 
@@ -114,7 +125,7 @@ body {
     height: auto;
     background: #f4f4f4;
     text-align: center;
-    padding-bottom: 30px;
+    padding-bottom: 70px;
 }
 .about_header  {
     width: 100%;
@@ -152,45 +163,98 @@ body {
 /********************************
 ******** SKILLS SECTION *********
 ********************************/
+.skills {
+    overflow: hidden;
+    padding-bottom: 50px;
+}
 .skills_desc {
     font-family: 'Orbitron', sans-serif;
     font-size: 20px;
 }
 .icons {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     text-align: center;
     font-size: 250px;
+    background-color: transparent;
+    perspective: 1000px; 
 }
+
 .icons_element {
-    position: relative;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
 }
-.icons_card {
-    font-family: 'Orbitron', sans-serif;
-    background-color: #E34C26;
-    width: 160px;
-    height: 194px;
-    padding-top: 20px;
-    position: absolute;
-    top: 24.2%;
-    right: 1%;
-    z-index: -1
-}
+
 .icons_card_active {
-    z-index: 0;
+  transform: rotateY(180deg);
 }
-.icons_card h1{
-    color: #fff;
-    font-size: 30px;
+.icons_card_front, .icons_card_back {
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
 }
-.icons_card p{
-    color: #fff;
-    font-size: 24px;
+
+.icons_card_front {
+  color: black;
+  backface-visibility: hidden;
+}
+
+.icons_card_back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+.icons_card_back h1 {
+    color: #f4f4f4;
+    font-size: 0.25em;
+    margin: 0 auto;
+}
+.icons_card_back p {
+    color: #f4f4f4;
+    font-size: 0.15em;
+    margin: 0 auto;
+} 
+.icons_card_back span {
+    font-family: 'Orbitron', sans-serif;
+    display: block;
+    vertical-align: middle;
+    line-height: normal;
+    position: relative;
+    top: 30%;
+}
+@media  (max-width: 768px) {
+    #card_3 h1 {
+        color: #f4f4f4;
+        font-size: 0.20em;
+}
+    .icons_card_back span {
+        top: 35%;
+}
+}
+
+#card_1 {
+    background-color: #E34C26;
+}
+#card_2 {
+    background-color: #1680C0;
+}
+#card_3 {
+    background-color: #f7df1e;
 }
 .fab {
     filter: grayscale(100%);
+    position: relative;
 }
-.fa-html5:hover, .fa-css3-alt:hover, .fa-js:hover, .fa-react:hover, .fa-npm:hover, .fa-sass:hover {
+.fa-html5:hover, .fa-css3-alt:hover, .fa-js:hover, .fa-react:hover, .fa-npm:hover, .fa-less:hover, .fa-github:hover, #rwd_icon:hover, #jquery_icon:hover {
     filter: grayscale(0%);
 }
 
@@ -209,6 +273,83 @@ body {
 .fa-npm {
     color: #cb3837;
 }
-.fa-sass {
+.fa-less {
     color: #c69;
+}
+.fa-github {
+    color: #6e5494;
+}
+#rwd_icon, #jquery_icon {
+    width: 200px;
+    margin: 0 auto;
+    padding: 20px;
+    filter: grayscale(100%);
+}
+/********************************
+******* PROJECTS SECTION ********
+********************************/
+.projects_container {
+    width: 100%;
+    min-height: 500px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    text-align: center;
+}
+.projects_item {
+    position: relative;
+    margin: 15px;
+}
+.projects_photo {
+    width: 450px;
+    position: relative;
+    margin: 0 auto;
+}
+.projects_photo img{
+    width: 450px;
+}
+.projects_desc {
+    font-family: 'Orbitron', sans-serif;
+    width: 100%;
+    height: 98%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
+    z-index: -1;
+}
+.projects_desc p {
+    margin: 0 auto;
+}
+.desc_active {
+    z-index: 1;
+}
+.projects_button {
+    position: absolute;
+    width: 50%;
+    height: 40px;
+    border: 2px solid transparent;
+    border-image: linear-gradient(150deg, #F81884 0%, #4717f6 100%);
+    border-image-slice: 1;
+    z-index: 1;
+    line-height: 40px;
+    background: rgba(255, 255, 255, 0);
+    color: #333;
+    bottom: 5px;
+    right: 25%;
+    cursor: pointer;
+}
+#demo_button {
+bottom: 53px;
+}
+.projects_button:hover {
+    background: rgba(255, 255, 255,0.8);
+}
+@media only screen and (max-width: 768px) {
+.projects_photo {
+    width: 250px;
+}
+.projects_photo img{
+    width: 250px;
+}
 }
