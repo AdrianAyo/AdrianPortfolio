@@ -13,121 +13,143 @@
     </head>
 
     <body>
-        <div class="navbar">
-            
-        </div>
-        <div class="header section_border">
-            <div class="logo logo_border">
-                <div><h1>Adrian</h1></div>
-               <div><h2>Waśniewski</h2></div>
-            </div>
-            <div class="insidetext">
-                <h1>FRONTEND DEVELOPER</h1>
-            </div>
-        </div>
-        <div class="about section_border">
-            <h1 class="section_title">About me</h1>
-            <div class="about_header">
-                <div class="about_photo">
-                    <img src="https://images.unsplash.com/photo-1536148935331-408321065b18?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=592e98bd4cd8def6f5d5b072680409be&auto=format&fit=crop&w=633&q=80">
-                </div>
-                <div class="about_text">
-                    <p>
-                        My name is Adrian, i'm 26 years old and i am self-taught junior frontend developer from Wrocław, Poland.</br></br>In 2017 i discovered that coding gives me much 
-                        fun and i want to do it as my full time job, and so my journey began.</br></br>I was learning on sites such as codecademy.com, sololearn.com, udemy.com, codewars.com and many others.
-                        </br></br>I'm still just entry level developer, but i improve my skills on a daily basis.</br></br>In the near future i would like to join web development company where i 
-                        could learn from more advanced developers and grow even faster.
-                    </p>
+        <section id="navbar">
+            <div class="navbar">
+                <div class="navbar_categories">
+                    <a class="hvr-float" href="#header">Home</a>
+                    <a class="hvr-float" href="#about">About</a>
+                    <a class="hvr-float" href="#skillset">Skills</a>
+                    <a class="hvr-float" href="#projects">Projects</a>
                 </div>
             </div>
-        </div>
-        <div class="skills section_border">
-            <h1 class="section_title">Skillset</h1>
-            <div class="skills_desc">
-                <h1>MAIN LANGUAGES:</h1>
+        </section>
+        
+        <section id="header">
+            <div class="header section_border">
+                <div class="logo logo_border">
+                    <div><h1>Adrian</h1></div>
+                <div><h2>Waśniewski</h2></div>
+                </div>
+                <div class="insidetext">
+                    <h1>FRONTEND DEVELOPER</h1>
+                </div>
             </div>
-            <div class="icons">
-                <div class="icons_element">
-                    <div class="icons_card_front">
-                        <i class="fab fa-html5"></i>
-                    </div>
+        </section>
 
-                    <div class="icons_card_back" id="card_1">
-                        <span><h1>HTML</h1></span>
-                        <span><p>★★✰✰✰</p></span>
+        <section id="about">
+            <div class="about section_border">
+                <div class="title_bubble"></div>
+                <h1 class="section_title">About</h1>
+                <div class="about_header">
+                    <div class="about_photo">
+                        <img src="https://images.unsplash.com/photo-1536148935331-408321065b18?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=592e98bd4cd8def6f5d5b072680409be&auto=format&fit=crop&w=633&q=80">
                     </div>
-                </div>
-                <div class="icons_element">
-                    <div class="icons_card_front">
-                        <i class="fab fa-css3-alt"></i>
-                    </div>
-                
-                    <div class="icons_card_back" id="card_2">
-                        <span><h1>CSS</h1></span>
-                        <span><p>★★★✰✰</p></span>
-                    </div>
-                </div>
-                <div class="icons_element">
-                    <div class="icons_card_front">
-                        <i class="fab fa-js"></i>
-                    </div>
-                
-                    <div class="icons_card_back" id="card_3">
-                        <span><h1>JavaScript</h1></span>
-                        <span><p>★★✰✰✰</p></span>
+                    <div class="about_text">
+                        <p>
+                            My name is Adrian, i'm 26 years old and i am self-taught junior frontend developer from Wrocław, Poland.</br></br>In 2017 i discovered that coding gives me much 
+                            fun and i want to do it as my full time job, and so my journey began.</br></br>I was learning on sites such as codecademy.com, sololearn.com, udemy.com, codewars.com and many others.
+                            </br></br>I'm still just entry level developer, but i improve my skills on a daily basis.</br></br>In the near future i would like to join web development company where i 
+                            could learn from more advanced developers and grow even faster.
+                        </p>
                     </div>
                 </div>
             </div>
-            <div class="skills_desc">
-                <h1>FAMILIAR WITH:</h1>
-            </div>
-            <div class="icons">
-                <i class="fab fa-react"></i>
-                <i class="fab fa-npm"></i>
-                <i class="fab fa-less"></i>
-                <i class="fab fa-github"></i>
-                <img id="jquery_icon" src="http://pluspng.com/img-png/jquery-logo-png--800.gif"/>
-                <img id="rwd_icon" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4IiB2aWV3Qm94PSIwIDAgMzk2LjQ5NCAzOTYuNDk0IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAzOTYuNDk0IDM5Ni40OTQ7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8cGF0aCBkPSJNMzA0LjQyLDMzMC45MDFoLTQzLjIxOWMtMS41NiwwLTIuODM0LTEuMjczLTIuODM0LTIuODM0di0xMC41MmMwLTEuNTU5LTEuMjc1LTIuODM0LTIuODM0LTIuODM0aC02MC40NzUgICBjLTEuNTYsMC0yLjgzNSwxLjI3NS0yLjgzNSwyLjgzNHYxMC41MmMwLDEuNTYxLTEuMjc1LDIuODM0LTIuODM1LDIuODM0aC0zMi40OTFjLTEuNTYsMC0yLjgzNSwxLjI3NS0yLjgzNSwyLjgzNHYxMi4xNyAgIGMwLDEuNTU5LDEuMjc1LDIuODM0LDIuODM1LDIuODM0aDE0Ny41MjFjMS41NTksMCwyLjgzNC0xLjI3NSwyLjgzNC0yLjgzNHYtMTIuMTdDMzA3LjI1NCwzMzIuMTc5LDMwNS45NzksMzMwLjkwMSwzMDQuNDIsMzMwLjkwMSAgIHoiIGZpbGw9IiMyN2RmYjEiLz4KCTxnPgoJCTxwYXRoIGQ9Ik0zNzcuMDMyLDQ2LjM2OGgtMzA4LjRjLTEwLjczLDAtMTkuNDU5LDguNzMtMTkuNDU5LDE5LjQ2MmMwLDAsMCwzNy4xMDksMCw1MC43NjFjMCw2LjcxMS0wLjQ5OCw3LjY2LDQuMDA0LDcuNjYgICAgYzIuMzkxLDAsNS4wMzksMCw3LjcyLDBjMy43NzgsMCwzLjAwMy0wLjk0OSwzLjAwMy03Ljc4NWMwLTEzLjYyMSwwLTUwLjYzNiwwLTUwLjYzNmMwLTIuNTY1LDIuMTY4LTQuNzMzLDQuNzMyLTQuNzMzaDMwOC40ICAgIGMyLjU2MywwLDQuNzMxLDIuMTY4LDQuNzMxLDQuNzMzdjE4OS45OTloLTIxOS44N2MwLDAtNy43NDktMC4wMTQtNy43NDksMTAuMDA2YzAsNS45NDEsMCwxNy44MjMsMCwyMy43NjYgICAgYzAsMTAuMDA2LDgsMTAuMDA2LDgsMTAuMDA2aDIxNC44ODhjMTAuNzI5LDAsMTkuNDYxLTguNzI5LDE5LjQ2MS0xOS40NTlWNjUuODNDMzk2LjQ5Myw1NS4wOTksMzg3Ljc2Myw0Ni4zNjgsMzc3LjAzMiw0Ni4zNjh6ICAgICBNMjIyLjgzMywyODIuODA0Yy00Ljg0NSwwLTguNzcxLTMuOTI2LTguNzcxLTguNzY4czMuOTI2LTguNzcsOC43NzEtOC43N2M0Ljg0LDAsOC43NjcsMy45MjgsOC43NjcsOC43NyAgICBTMjI3LjY3MywyODIuODA0LDIyMi44MzMsMjgyLjgwNHoiIGZpbGw9IiMyN2RmYjEiLz4KCQk8cGF0aCBkPSJNMTI0LjEyNSwxNDEuNjMzSDEyLjU1OUM1LjYzMiwxNDEuNjMzLDAsMTQ3LjI2NiwwLDE1NC4xOTN2MTgzLjM3MmMwLDYuOTI2LDUuNjMyLDEyLjU2MSwxMi41NTksMTIuNTYxaDExMS41NjYgICAgYzYuOTIzLDAsMTIuNTU5LTUuNjM1LDEyLjU1OS0xMi41NjFWMTU0LjE5M0MxMzYuNjg0LDE0Ny4yNjYsMTMxLjA0OCwxNDEuNjMzLDEyNC4xMjUsMTQxLjYzM3ogTTU0LjU4LDE1NC40NDNoMjcuNTIzICAgIGMxLjMxMywwLDIuMzgsMS4wNjQsMi4zOCwyLjM4MWMwLDEuMzE0LTEuMDY2LDIuMzc5LTIuMzgsMi4zNzlINTQuNThjLTEuMzE1LDAtMi4zNzktMS4wNjUtMi4zNzktMi4zNzkgICAgQzUyLjIwMSwxNTUuNTA3LDUzLjI2NSwxNTQuNDQzLDU0LjU4LDE1NC40NDN6IE02OC4xNzUsMzQxLjMwNGMtMy41OSwwLTYuNS0yLjkxLTYuNS02LjVzMi45MS02LjUsNi41LTYuNXM2LjUsMi45MSw2LjUsNi41ICAgIFM3MS43NjUsMzQxLjMwNCw2OC4xNzUsMzQxLjMwNHogTTEyNS44OTMsMzIyLjJjMCwxLjY3Ni0xLjM0MiwzLjA0Ny0yLjk4LDMuMDQ3SDEzLjc3NGMtMS42MzksMC0yLjk4LTEuMzcxLTIuOTgtMy4wNDdWMTY5LjgyNSAgICBjMC0xLjY3NiwxLjM0Mi0zLjA0NiwyLjk4LTMuMDQ2aDEwOS4xMzljMS42MzksMCwyLjk4LDEuMzcxLDIuOTgsMy4wNDZWMzIyLjJ6IiBmaWxsPSIjMjdkZmIxIi8+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg=="/>            </div>
-        </div>
-        <div class="projects section_border">
-            <h1 class="section_title">Projects</h1>
+        </section>
 
-            <div class="projects_container">
-                <div class="projects_item">
-                    <div class="projects_photo">
-                        <img src="img/trener_golab1.jpg" />
-                        <div class="projects_desc">
-                            <div class="projects_button" id="code_button">CODE</div>
-                            <div class="projects_button" id="demo_button">DEMO</div>
-                            <h1>TRENER GOLAB</h1>
-                            <p>Completely redesignetd template</br>added new features</p>
+        <section id="skillset">
+            <div class="skills section_border">
+                <div class="title_bubble"></div>
+                <h1 class="section_title">Skillset</h1>
+                <div class="skills_desc">
+                    <h1>MAIN LANGUAGES:</h1>
+                </div>
+                <div class="icons">
+                    <div class="icons_element">
+                        <div class="icons_card_front">
+                            <i class="fab fa-html5"></i>
+                        </div>
+
+                        <div class="icons_card_back" id="card_1">
+                            <span><h1>HTML</h1></span>
+                            <span><p>★★✰✰✰</p></span>
+                        </div>
+                    </div>
+                    <div class="icons_element">
+                        <div class="icons_card_front">
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                    
+                        <div class="icons_card_back" id="card_2">
+                            <span><h1>CSS</h1></span>
+                            <span><p>★★★✰✰</p></span>
+                        </div>
+                    </div>
+                    <div class="icons_element">
+                        <div class="icons_card_front">
+                            <i class="fab fa-js"></i>
+                        </div>
+                    
+                        <div class="icons_card_back" id="card_3">
+                            <span><h1>JavaScript</h1></span>
+                            <span><p>★★✰✰✰</p></span>
                         </div>
                     </div>
                 </div>
-                <div class="projects_item">
-                    <div class="projects_photo">
-                        <img src="img/foodee.jpg" />
-                        <div class="projects_desc">
-                            <div class="projects_button" id="code_button">CODE</div>
-                            <div class="projects_button" id="demo_button">DEMO</div>
-                            <h1>FOODEE</h1>
-                            <p>Bootcamp project, made sticky navbar</p>
+                <div class="skills_desc">
+                    <h1>FAMILIAR WITH:</h1>
+                </div>
+                <div class="icons">
+                    <i class="fab fa-react"></i>
+                    <i class="fab fa-npm"></i>
+                    <i class="fab fa-less"></i>
+                    <i class="fab fa-github"></i>
+                    <img id="jquery_icon" src="http://pluspng.com/img-png/jquery-logo-png--800.gif"/>
+                    <img id="rwd_icon" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4IiB2aWV3Qm94PSIwIDAgMzk2LjQ5NCAzOTYuNDk0IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAzOTYuNDk0IDM5Ni40OTQ7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8cGF0aCBkPSJNMzA0LjQyLDMzMC45MDFoLTQzLjIxOWMtMS41NiwwLTIuODM0LTEuMjczLTIuODM0LTIuODM0di0xMC41MmMwLTEuNTU5LTEuMjc1LTIuODM0LTIuODM0LTIuODM0aC02MC40NzUgICBjLTEuNTYsMC0yLjgzNSwxLjI3NS0yLjgzNSwyLjgzNHYxMC41MmMwLDEuNTYxLTEuMjc1LDIuODM0LTIuODM1LDIuODM0aC0zMi40OTFjLTEuNTYsMC0yLjgzNSwxLjI3NS0yLjgzNSwyLjgzNHYxMi4xNyAgIGMwLDEuNTU5LDEuMjc1LDIuODM0LDIuODM1LDIuODM0aDE0Ny41MjFjMS41NTksMCwyLjgzNC0xLjI3NSwyLjgzNC0yLjgzNHYtMTIuMTdDMzA3LjI1NCwzMzIuMTc5LDMwNS45NzksMzMwLjkwMSwzMDQuNDIsMzMwLjkwMSAgIHoiIGZpbGw9IiMyN2RmYjEiLz4KCTxnPgoJCTxwYXRoIGQ9Ik0zNzcuMDMyLDQ2LjM2OGgtMzA4LjRjLTEwLjczLDAtMTkuNDU5LDguNzMtMTkuNDU5LDE5LjQ2MmMwLDAsMCwzNy4xMDksMCw1MC43NjFjMCw2LjcxMS0wLjQ5OCw3LjY2LDQuMDA0LDcuNjYgICAgYzIuMzkxLDAsNS4wMzksMCw3LjcyLDBjMy43NzgsMCwzLjAwMy0wLjk0OSwzLjAwMy03Ljc4NWMwLTEzLjYyMSwwLTUwLjYzNiwwLTUwLjYzNmMwLTIuNTY1LDIuMTY4LTQuNzMzLDQuNzMyLTQuNzMzaDMwOC40ICAgIGMyLjU2MywwLDQuNzMxLDIuMTY4LDQuNzMxLDQuNzMzdjE4OS45OTloLTIxOS44N2MwLDAtNy43NDktMC4wMTQtNy43NDksMTAuMDA2YzAsNS45NDEsMCwxNy44MjMsMCwyMy43NjYgICAgYzAsMTAuMDA2LDgsMTAuMDA2LDgsMTAuMDA2aDIxNC44ODhjMTAuNzI5LDAsMTkuNDYxLTguNzI5LDE5LjQ2MS0xOS40NTlWNjUuODNDMzk2LjQ5Myw1NS4wOTksMzg3Ljc2Myw0Ni4zNjgsMzc3LjAzMiw0Ni4zNjh6ICAgICBNMjIyLjgzMywyODIuODA0Yy00Ljg0NSwwLTguNzcxLTMuOTI2LTguNzcxLTguNzY4czMuOTI2LTguNzcsOC43NzEtOC43N2M0Ljg0LDAsOC43NjcsMy45MjgsOC43NjcsOC43NyAgICBTMjI3LjY3MywyODIuODA0LDIyMi44MzMsMjgyLjgwNHoiIGZpbGw9IiMyN2RmYjEiLz4KCQk8cGF0aCBkPSJNMTI0LjEyNSwxNDEuNjMzSDEyLjU1OUM1LjYzMiwxNDEuNjMzLDAsMTQ3LjI2NiwwLDE1NC4xOTN2MTgzLjM3MmMwLDYuOTI2LDUuNjMyLDEyLjU2MSwxMi41NTksMTIuNTYxaDExMS41NjYgICAgYzYuOTIzLDAsMTIuNTU5LTUuNjM1LDEyLjU1OS0xMi41NjFWMTU0LjE5M0MxMzYuNjg0LDE0Ny4yNjYsMTMxLjA0OCwxNDEuNjMzLDEyNC4xMjUsMTQxLjYzM3ogTTU0LjU4LDE1NC40NDNoMjcuNTIzICAgIGMxLjMxMywwLDIuMzgsMS4wNjQsMi4zOCwyLjM4MWMwLDEuMzE0LTEuMDY2LDIuMzc5LTIuMzgsMi4zNzlINTQuNThjLTEuMzE1LDAtMi4zNzktMS4wNjUtMi4zNzktMi4zNzkgICAgQzUyLjIwMSwxNTUuNTA3LDUzLjI2NSwxNTQuNDQzLDU0LjU4LDE1NC40NDN6IE02OC4xNzUsMzQxLjMwNGMtMy41OSwwLTYuNS0yLjkxLTYuNS02LjVzMi45MS02LjUsNi41LTYuNXM2LjUsMi45MSw2LjUsNi41ICAgIFM3MS43NjUsMzQxLjMwNCw2OC4xNzUsMzQxLjMwNHogTTEyNS44OTMsMzIyLjJjMCwxLjY3Ni0xLjM0MiwzLjA0Ny0yLjk4LDMuMDQ3SDEzLjc3NGMtMS42MzksMC0yLjk4LTEuMzcxLTIuOTgtMy4wNDdWMTY5LjgyNSAgICBjMC0xLjY3NiwxLjM0Mi0zLjA0NiwyLjk4LTMuMDQ2aDEwOS4xMzljMS42MzksMCwyLjk4LDEuMzcxLDIuOTgsMy4wNDZWMzIyLjJ6IiBmaWxsPSIjMjdkZmIxIi8+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg=="/>            </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="projects section_border">
+                <div class="title_bubble"></div>
+                <h1 class="section_title">Projects</h1>
+
+                <div class="projects_container">
+                    <div class="projects_item">
+                        <div class="projects_photo">
+                            <img src="img/trener_golab1.jpg" />
+                            <div class="projects_desc">
+                                <div class="projects_button hvr-radial-out" id="code_button">CODE</div>
+                                <div class="projects_button hvr-radial-out" id="demo_button">DEMO</div>
+                                <h1>TRENER GOLAB</h1>
+                                <p>Completely redesignetd template</br>added new features</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="projects_item">
-                    <div class="projects_photo">
-                        <img src="img/giphy.jpg" />
-                        <div class="projects_desc">
-                            <div class="projects_button" id="code_button">CODE</div>
-                            <div class="projects_button" id="demo_button">DEMO</div>
-                            <h1>GIPHIES</h1>
-                            <p>Bootcamp project, made connection with Giphy API</p>
+                    <div class="projects_item">
+                        <div class="projects_photo">
+                            <img src="img/foodee.jpg" />
+                            <div class="projects_desc">
+                                <div class="projects_button hvr-radial-out" id="code_button">CODE</div>
+                                <div class="projects_button hvr-radial-out" id="demo_button">DEMO</div>
+                                <h1>FOODEE</h1>
+                                <p>Bootcamp project, made sticky navbar</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projects_item">
+                        <div class="projects_photo">
+                            <img src="img/giphy.jpg" />
+                            <div class="projects_desc">
+                                <div class="projects_button hvr-radial-out" id="code_button">CODE</div>
+                                <div class="projects_button hvr-radial-out" id="demo_button">DEMO</div>
+                                <h1>GIPHIES</h1>
+                                <p>Bootcamp project, made connection with Giphy API</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script type="text/javascript" src="script.js"></script>
