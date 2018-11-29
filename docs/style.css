@@ -56,8 +56,8 @@ a:visited {
         border-bottom: 3px solid transparent;
     }
     .section_title {
-        font-size: 8vh;
-        padding-top: 106px;
+        font-size: 9vh;
+        padding-top: 110px;
         padding-left: 93px;
     }
 
@@ -92,6 +92,12 @@ a:visited {
 .navbar a:hover {
     background: linear-gradient(-50deg, rgba(248,24,132,0.5) 0%, rgba(71,23,246,0.5) 60%);
     border-radius: 50% 50% 50% 50% / 100% 0% 100% 0%;
+}
+
+@media (max-width: 768px) {
+    .navbar_categories {
+        font-size: 1.2em;
+    }
 }
 
 /* Float */
